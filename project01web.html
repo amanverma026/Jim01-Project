@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman's Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+    /* css reset  */
+    body {
+
+        margin: 0px;
+        padding: 0px;
+        background: url('photo-1593079831268-3381b0db4a77.avif');
+        color: white;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 35px;
+        top: 20px;
+
+    }
+
+    .mid {
+        font-family: 'Kaushan Script', cursive;
+        /* border: 2px solid rgb(98, 0, 255); */
+        display: block;
+        width: 39%;
+        margin: 20px auto;
+
+    }
+
+    .right {
+        position: absolute;
+        right: 35px;
+        top: 20px;
+        /* border: 2px solid rgb(252, 8, 203); */
+        display: inline-block;
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+        list-style: none;
+
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        padding: 0px 15px;
+        text-decoration: none;
+
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: lightcoral;
+
+    }
+
+    #img1 {
+        height: 60px;
+        width: 60px;
+        color: white;
+        filter: invert(100%);
+        border-radius: 50%;
+
+
+    }
+
+    .left #av {
+        font-family: 'Kaushan Script', cursive;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .right .r1 {
+        padding: 6px 10px;
+        cursor: pointer;
+        font-family: 'Kaushan Script', cursive;
+        border-radius: 8px;
+        width: 64px;
+        text-align: center;
+        border: 0px;
+
+    }
+
+    .right .r1:hover {
+        background-color: rgb(216, 216, 216);
+        color: rgb(1, 15, 15);
+        /* border:0px; */
+
+    }
+
+    .divmain {
+        height: 400px;
+        width: 600px;
+        /* border: 3px solid red; */
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .lg1 {
+        /* border: 2px solid white; */
+        margin: 10px auto;
+        font-size: xx-large;
+        text-align: center;
+    }
+    .ip{
+        width:99%;
+        text-align: center;
+        justify-content: center;
+        margin: 13px 0px;
+        padding: 0px;
+        font-size:x-large;
+        border-radius: 50px;
+        background-color: lightcyan;
+    }
+    .b1{
+        font-size:larger;
+        padding:10px;
+        margin: 8px 20px 4px 218px;
+        background-color: rgb(253, 136, 136);
+        border-radius: 4px;
+    }
+
+    
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img id="img1" src="download.png" alt="Logo">
+            <div id="av">AVFIT</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="r1">Email</button>
+        </div>
+    </header>
+    <div class="divmain">
+        <p class="lg1">Login Form</p>
+        <div class="inp1">
+            <input   class ="ip"  type="text" name="myName" placeholder="Enter Name" >
+        </div>
+        <div class="inp1">
+            <input  class ="ip" type="text" email="myEmail" placeholder="Enter E-mail" >
+        </div>
+        <div class="inp1">
+            <input  class ="ip" type="text" phone="myPhoneNo" placeholder="Enter Mobile Number" >
+        </div>
+        <div class="inp1">
+            <input class ="ip"  type="text" address="myAddress" id="Address" placeholder="Enter Address" >
+        <div class="inp1">
+            <input  class ="ip" type="text" address="password" placeholder="Enter Password" >
+        </div>
+        <button class="b1">Submit Now</button>
+        
+    </div>
+    </div>
+</body>
+
+</html>
